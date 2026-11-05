@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf3;
+    color: #333;
+}
+
+header {
+    background: #a52a2a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #252525;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ), url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+    center/cover;
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: orange;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 45px 7%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #a52a2a;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.food-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.food-card h3 {
+    color: #a52a2a;
+    margin-bottom: 12px;
+}
+
+.food-card p {
+    margin: 10px 0;
+}
+
+button {
+    background: #a52a2a;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+button:hover {
+    background: #721b1b;
+}
+
+input {
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: min(90%, 300px);
+}
+
+.cart-item, .order-card {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+#total {
+    margin: 20px;
+    color: green;
+}
+
+#message {
+    margin-top: 15px;
+    color: green;
+}
+
+footer {
+    background: #252525;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+}
